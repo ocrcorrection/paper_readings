@@ -33,7 +33,7 @@ RDD每行平均长度42.4个字母，TCP平均53.2个
 > Our proposed method is based on the observation that significant number of duplicate
 > and near-duplicate documents exist in many cor-pora (Xu and Smith, 2017), resulting in OCR output containing repeated texts with various quality.
 
-OCR的输出中存在大量有着不同质量的重复文本。（猜测：是不是这里参照了上面基于选举的集成对重复文本进行了选举）
+OCR的输出中存在大量有着不同质量的重复文本。
 
 > We propose to map each erroneous OCR’d text unit to either its high-quality duplication or a consensus correction among its duplications via bootstrapping from an uniform error model. 
 
@@ -58,13 +58,13 @@ one-best?（之前的问题。这玩意儿应该就来自上面那个基线纠�
 ## 预处理
 
 对于监督学习的训练和测试：
-对于1384项来自RDD的手写文本和934本TCP的书，我们使用了其手工抄写本与其onebest训练的OCR转录本对齐。这些手写本独立来自现有主人（强调字体等方面的不同，而非相同），都是在公共领域和由英文完成。尽管作为witness的Chronicling America和Internet Archive包含很多非英文文本。
+对于1384项来自RDD的手写文本和934本TCP的书，使用了其手工抄写本与其onebest训练的OCR转录本对齐。这些手写本独立来自现有主人（强调字体等方面的不同，而非相同），都是在公共领域和由英文完成。尽管作为witness的Chronicling America和Internet Archive包含很多非英文文本。
 
 为了获得更多对于OCR行的准确读取的参照，
 
 对于每一个RDD项都同RDD其它项以及CA的报纸进行了对齐。
 
-对于每一个TCP项都同TCP其它项以及IA的书籍进行了对齐。（怎么对齐的，应该是下方的Smith-Waterman算法）
+对于每一个TCP项都同TCP其它项以及IA的书籍进行了对齐。
 
 ### 对齐机制
 
