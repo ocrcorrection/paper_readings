@@ -82,7 +82,9 @@ one-best?（之前的问题。这玩意儿应该就来自上面那个基线纠�
 
 
 
+### 数据来源
 
+- <http://www.ccs.neu.edu/home/dongrui/ocr.html>
 
 # 二、模型
 
@@ -100,10 +102,6 @@ one-best?（之前的问题。这玩意儿应该就来自上面那个基线纠�
 ![ ](https://raw.githubusercontent.com/yaolinxia/img_resource/master/papers/commonsense/QQ图片20190128202303.png)
 
 ![ ](https://raw.githubusercontent.com/yaolinxia/img_resource/master/papers/commonsense/QQ图片20190128202307.png)
-
-
-
-
 
 
 
