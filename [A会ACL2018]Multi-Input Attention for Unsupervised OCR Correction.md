@@ -39,12 +39,6 @@
 
 ![ ](https://raw.githubusercontent.com/yaolinxia/img_resource/master/papers/commonsense/QQ图片20190128202303.png)
 
-
-
-
-
-
-
 ![ ](https://raw.githubusercontent.com/yaolinxia/img_resource/master/papers/commonsense/QQ图片20190128202307.png)
 
 
