@@ -12,15 +12,11 @@
 
 RDD每行平均长度42.4个字母，TCP平均53.2个
 
-
-
 >  two million issues from the Chronicling America collection of historic U.S. newspapers, which is the largest public-domain full-text collection in the Library of Congress; and three million public-domain books in the Internet Archive. 
 
 200w来自美国历史报纸的数据和300w来自internet archive的公共领域书籍。（作为witness）
 
 在CA中，44%的行与至少一个其它witness对齐。
-
-
 
 ## 使用原因：
 
@@ -28,7 +24,7 @@ RDD每行平均长度42.4个字母，TCP平均53.2个
 
 语料库中，因为低质量的印刷和扫描以及物理上的损坏，经常影响OCR实际可行性，造成严重的识别错误。（需要后纠正的原因以及针对的材料，纠正的就是语料库）
 
-监督学习需要较高的人力成本，集成方法中，基于选举的集成需要孩子少有一个输入是对的，分类方法则也需要人类标注。
+监督学习需要较高的人力成本，集成方法中，基于选举的集成需要孩子中至少有一个输入是对的，分类方法则也需要人类标注。
 
 > Our proposed method is based on the observation that significant number of duplicate
 > and near-duplicate documents exist in many cor-pora (Xu and Smith, 2017), resulting in OCR output containing repeated texts with various quality.
@@ -37,7 +33,7 @@ OCR的输出中存在大量有着不同质量的重复文本。
 
 > We propose to map each erroneous OCR’d text unit to either its high-quality duplication or a consensus correction among its duplications via bootstrapping from an uniform error model. 
 
-模型目标：将出现错误的文本单元映射为高质量的重复部分或者一个在所有复制上的一致纠正，通过自一个统一错误模型基础上引导。
+模型目标：将出现错误的文本单元映射为高质量的重复部分或者一个在所有复制上的一致纠正，通过来自一个统一错误模型基础上进行引导。
 
 基线纠正系统：Bahdanau et al., 2015
 
